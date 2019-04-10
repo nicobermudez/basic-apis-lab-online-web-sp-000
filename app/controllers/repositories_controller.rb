@@ -5,5 +5,7 @@ class RepositoriesController < ApplicationController
   end
 
   def github_search
+    Faraday.get '' do |req|
+      req.params
   end
 end
